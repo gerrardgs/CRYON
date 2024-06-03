@@ -1,0 +1,144 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #181727;
+    color: #ffffff;
+}
+
+header {
+    background-color: #181727;
+    padding: 20px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #7C6CFB;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 0;
+    background-color: #181727;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    color: #ffffff;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
+.hero .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero .video {
+    margin-top: 20px;
+}
+
+.education {
+    padding: 50px 0;
+}
+
+.education h2, .education h3 {
+    text-align: center;
+    color: #ffffff;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content-item {
+    display: flex;
+    background-color: transparent;
+    padding: 20px 0;
+    transition: transform 0.3s;
+}
+
+.content-item:hover {
+    transform: scale(1.05);
+}
+
+.video {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.content {
+    flex: 1;
+}
+
+.content h4 {
+    margin-top: 0;
+    color: #ffffff;
+}
+
+.content p {
+    color: #ffffff;
+}
+
+.open-lms {
+    display: block;
+    text-align: center;
+    background-color: #28B8FF;
+    color: #ffffff;
+    padding: 10px 20px;
+    margin: 20px auto;
+    width: 200px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.open-lms:hover {
+    background-color: #7C6CFB;
+}
+
+footer {
+    background-color: #181727;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 10px 0;
+    color: #ffffff;
+}

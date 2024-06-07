@@ -20,6 +20,13 @@ class UserSeeder extends Seeder
             'password' => 'akuhebat',
             'role' => 'admin'
         ]);
-    
+        User::create([
+            'name' => 'Users',
+            'email' => 'starships129@gmail.com',
+            'phone' => '0895340884210',
+            'password' => 'hebataku',
+            'role' => 'customer'
+        ]);
+
     }
 }

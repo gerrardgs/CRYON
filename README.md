@@ -6,3 +6,4 @@
 4. Jalankan perintah `php artisan key:generate`
 5. Jalankan perintah `php artisan migrate`
 6. Jalankan perintah `php artisan serve`
+7. Selesai

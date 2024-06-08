@@ -4,6 +4,7 @@ use App\Http\Controllers\admin\LoginController as AdminLoginController;
 use App\Http\Controllers\admin\DashboardController as AdminDashboardController;
 
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\ForgetPasswordManager;
 use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
 
@@ -20,6 +21,15 @@ Route::group(['prefix' => 'account'], function () {
         Route::get('register', [LoginController::class, 'register'])->name('account.register');
         Route::post('process->register', [LoginController::class, 'processRegister'])->name('account.processRegister');
         Route::post('authenticate', [LoginController::class, 'authenticate'])->name('account.authenticate');
+        Route::get('forget-password', [ForgetPasswordManager::class, "forgetPassword"])
+            ->name('account.forget.password');
+        Route::post('forget-password', [ForgetPasswordManager::class, "forgetPasswordPost"])
+            ->name('account.forget.password.post');
+        Route::get('reset-password/{token}', [ForgetPasswordManager::class, 'resetPassword'])
+            ->name('account.reset.password');
+        Route::post('reset-password', [ForgetPasswordManager::class, "resetPasswordPost"])
+            ->name('account.reset.password.post');
+        
     });
     
     //Authenticator Middlewares
@@ -28,7 +38,8 @@ Route::group(['prefix' => 'account'], function () {
         Route::get('dashboard', [DashboardController::class, 'index'])->name('account.dashboard');
     });
 });
-
+// Route::get('forget-password', [ForgetPasswordManager::class, "forgetPassword"])->name('account.forget.password');
+// Route::post('forget-password', [ForgetPasswordManager::class, "forgetPasswordPost"])->name('account.forget.password.post');
 
 Route::group(['prefix' => 'admin'], function () {
 

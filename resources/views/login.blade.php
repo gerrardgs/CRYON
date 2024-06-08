@@ -80,9 +80,11 @@
                                 </div>
                             </form>
                             <div class="text-center mt-4">
-                                <a href="#!" class="link-secondary text-decoration-none">Lupa password? Atur disini sekarang</a>
+                                <div class="credit">Lupa Password? <span style="color: #FF0000"></span><a href=" {{ route('account.forget.password') }} " class="link-secondary text-decoration-none">Atur Disini Sekarang!</a></div>
                                 <br>
-                                <a href=" {{ route('account.register') }} " class="link-secondary text-decoration-none">Belum punya akun? Daftar disini sekarang</a>
+                                <div class="credit">Belum Punya akun? <span style="color: #FF0000"></span><a href=" {{ route('account.register') }} " class="link-secondary text-decoration-none">Daftar Disini Sekarang!</a></div>
+                                <br>
+                                <div class="credit">Admin? <span style="color: #FF0000"></span><a href=" {{ route('admin.login') }} " class="link-secondary text-decoration-none">Login Disini!</a></div>
                             </div>
                         </div>
                     </div>

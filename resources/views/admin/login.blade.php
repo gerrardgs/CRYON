@@ -80,11 +80,9 @@
                                 </div>
                                 {{ session('error') }}
                             </form>
-                            {{-- <div class="text-center mt-4">
-                                <a href="#!" class="link-secondary text-decoration-none">Lupa password? Atur disini sekarang</a>
-                                <br>
-                                <a href=" {{ route('account.register') }} " class="link-secondary text-decoration-none">Belum punya akun? Daftar disini sekarang</a>
-                            </div> --}}
+                            <div class="text-center mt-4">
+                                <div class="credit">User? <span style="color: #FF0000"></span><a href=" {{ route('account.login') }} " class="link-secondary text-decoration-none">Login Disini!</a></div>
+                            </div>
                         </div>
                     </div>
                 </div>

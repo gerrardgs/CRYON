@@ -1,4 +1,4 @@
-# CARA SET UP LARAVEL PROJECT INI PERTAMA KALI SETELAH DI PULL REQUEST:
+# CARA SET UP LARAVEL PROJECT INI PERTAMA KALI SETELAH DI PULL REQUESTS:
 
 1. Jalankan perintah git clone `<https://github.com/gerrardgs/CRYON.git>`
 2. Jalankan perintah `composer install`

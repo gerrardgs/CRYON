@@ -1,0 +1,490 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #181727, #201e32);
+    color: white;
+}
+
+.text-dashboard {
+    font-weight: 700;
+    letter-spacing: 0.7px;
+    font-size: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.text-sub-dashboard {
+    color: lightgray !important;
+    padding-top: 10px;
+    font-size: 23px !important;
+}
+
+.video-dashboard {
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.video-box {
+    box-shadow: 0 0 15px #28b8ff;
+}
+
+iframe,
+.video-box {
+    height: 440px;
+    width: 60%;
+}
+
+iframe,
+.section-dashboard {
+    width: 98%;
+    height: 325px;
+}
+
+.garis-dashboard {
+    padding-top: 5px;
+    background-image: linear-gradient(to right, #201e32, #28b8ff, #201e32);
+}
+
+.section-dashboard {
+    box-shadow: 0px 0 8px #fff;
+    border-radius: 10px;
+}
+
+.judul-section-home {
+    font-weight: 600;
+    font-size: 38px;
+}
+
+.quotes-base {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-quotes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.quotes-dashboard {
+    margin-top: 100px;
+    height: 220px;
+    width: 600px;
+    background-color: #131320;
+    box-shadow: 0 0 8px #28b8ff;
+    border-radius: 12px;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 70px;
+}
+
+.text-quotes-dashboard {
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+.text-quotes-dashboard-bold {
+    font-weight: 700;
+}
+
+.text-quotes-dashboard-small {
+    font-size: 24px;
+    font-family: "Courier New", Courier, monospace;
+    letter-spacing: -0.8px;
+    font-weight: lighter;
+}
+
+.background {
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(12px);
+    z-index: 1;
+}
+
+.overlay {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    padding: 20px 40px;
+}
+
+.overlay-1 {
+    margin-left: 320px;
+    margin-right: 320px;
+}
+
+.overlay-text {
+    font-weight: 700;
+}
+
+#carouselExampleSlidesOnly.hover .carousel-inner .carousel-item {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.sectionDashboard {
+    transition: transform 0.3s ease;
+}
+
+.sectionDashboard.hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 1024px) {
+    .overlay-1 {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .text-dashboard {
+        font-size: 35px;
+        margin-left: 140px;
+        margin-right: 140px;
+    }
+
+    .text-sub-dashboard {
+        font-size: 19px !important;
+    }
+
+    iframe,
+    .video-box {
+        height: 370px;
+        width: 70%;
+    }
+
+    iframe,
+    .section-dashboard {
+        width: 100%;
+        height: 245px;
+    }
+
+    .judul-section-home {
+        font-weight: 600;
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .overlay-1 {
+        margin-left: 140px;
+        margin-right: 140px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .text-dashboard {
+        font-size: 28px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .text-sub-dashboard {
+        font-size: 17px !important;
+    }
+
+    iframe,
+    .video-box {
+        height: 315px;
+        width: 80%;
+    }
+
+    iframe,
+    .section-dashboard {
+        width: 70%;
+        height: 270px;
+    }
+
+    .text-section {
+        margin-top: 15px;
+        margin-left: 100px !important;
+        margin-right: 100px !important;
+    }
+
+    .judul-section-home {
+        font-weight: 600;
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 426px) {
+    .overlay-1 {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .text-dashboard {
+        margin-left: 15px;
+        margin-right: 15px;
+        line-height: 1.3;
+        font-size: 26px;
+    }
+
+    .text-sub-dashboard {
+        font-size: 15px !important;
+    }
+
+    .quotes-dashboard {
+        margin-top: 70px;
+        height: 180px;
+        width: 350px;
+        background-color: #131320;
+        box-shadow: 0 0 8px #28b8ff;
+        border-radius: 12px;
+        font-style: italic;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        margin-bottom: 40px;
+    }
+
+    .text-quotes-dashboard {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .text-quotes-dashboard-small {
+        font-size: 18px;
+        font-family: "Courier New", Courier, monospace;
+        letter-spacing: -0.8px;
+        font-weight: lighter;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    iframe,
+    .video-box {
+        height: 210px;
+        width: 90%;
+    }
+
+    iframe,
+    .section-dashboard {
+        width: 80%;
+        height: 180px;
+    }
+
+    .text-section {
+        margin-top: 15px;
+        margin-left: 35px !important;
+        margin-right: 35px !important;
+        margin-bottom: 45px;
+    }
+
+    .judul-section-home {
+        font-weight: 600;
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 376px) {
+    .overlay-1 {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    h1 {
+        font-size: 19px;
+    }
+
+    .text-dashboard {
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 23px;
+        line-height: 1.4;
+    }
+
+    .text-sub-dashboard {
+        font-size: 13px !important;
+    }
+
+    .quotes-dashboard {
+        margin-top: 70px;
+        height: 180px;
+        width: 310px;
+        background-color: #131320;
+        box-shadow: 0 0 8px #28b8ff;
+        border-radius: 12px;
+        font-style: italic;
+        line-height: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        margin-bottom: 40px;
+    }
+
+    .text-quotes-dashboard {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .text-quotes-dashboard-small {
+        font-size: 16px;
+        font-family: "Courier New", Courier, monospace;
+        letter-spacing: -0.8px;
+        font-weight: lighter;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+
+    iframe,
+    .video-box {
+        height: 210px;
+        width: 90%;
+    }
+
+    iframe,
+    .section-dashboard {
+        width: 90%;
+        height: 170px;
+    }
+
+    .text-section {
+        margin-top: 15px;
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+        margin-bottom: 55px;
+    }
+
+    .judul-section-home {
+        font-weight: 600;
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 321px) {
+    .overlay-1 {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    h1 {
+        font-size: 19px;
+    }
+
+    .text-dashboard {
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 23px;
+        line-height: 1.4;
+    }
+
+    .text-sub-dashboard {
+        font-size: 13px !important;
+    }
+
+    .quotes-dashboard {
+        margin-top: 70px;
+        height: 180px;
+        width: 280px;
+        background-color: #131320;
+        box-shadow: 0 0 8px #28b8ff;
+        border-radius: 12px;
+        font-style: italic;
+        line-height: 1.1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        margin-bottom: 40px;
+    }
+
+    .text-quotes-dashboard {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .text-quotes-dashboard-small {
+        font-size: 16px;
+        font-family: "Courier New", Courier, monospace;
+        letter-spacing: -0.8px;
+        font-weight: lighter;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+
+    iframe,
+    .video-box {
+        height: 160px;
+        width: 90%;
+    }
+
+    iframe,
+    .section-dashboard {
+        width: 90%;
+        height: 160px;
+    }
+
+    .text-section {
+        margin-top: 15px;
+        margin-left: 12px !important;
+        margin-right: 12px !important;
+        margin-bottom: 55px;
+    }
+
+    .judul-section-home {
+        font-weight: 600;
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}

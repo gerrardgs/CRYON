@@ -1,54 +1,84 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Laravel 11 Multi Auth :: Admin</title>
-      <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-   </head>
-   <body class="bg-light">
-        <nav class="navbar navbar-expand-md bg-white shadow-lg bsb-navbar bsb-navbar-hover bsb-navbar-caret">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                   <strong>Laravel 11 Multi Auth :: Admin</strong>
-                </a>
-                <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-                </svg>
-                </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1">
-                        
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#!" id="accountDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Hola, {{ Auth::guard('admin')->user()->name }} </a>
-                            {{-- <a class="nav-link dropdown-toggle" href= id="accountDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Hola, {{ Auth::user()->name }} </a> --}}
-                            <ul class="dropdown-menu border-0 shadow bsb-zoomIn" aria-labelledby="accountDropdown">                          
-                                <li>
-                                    <a class="dropdown-item" href=" {{ route('admin.logout') }} ">Logout</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                </div>
-            </div>
-        </nav>
-        <div class="container">
-           <div class="card border-0 shadow my-5">
-                <div class="card-header bg-light">
-                    <h3 class="h5 pt-2">Dashboard</h3>
-                </div>
-                <div class="card-body">
-                    You are logged in !!
-                </div>
-           </div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    @vite('resources/css/app.css')
+    <title>Dashboard</title>
+</head>
+
+<body class="w-full h-full bg-[#181727] text-white">
+    <header class="flex w-full justify-between items-center px-12 py-6 mb-12">
+        <img src="{{ asset('logo.png') }}" alt="Logo">
+        <div class="flex space-x-6 items-center">
+            <p class="text-white font-medium italic">Hai, <span class="font-bold">Admin</span></p>
+            <a href="/dashboard" class="text-[#28B8FF] font-bold">Home</a>
+            <a href="/manage-education"
+                class="bg-gradient-to-r from-[#7C6CFB] from-10% to-[#28B8FF] to-100% px-4 py-2 text-white font-bold rounded-lg">Manage
+                Education</a>
+            <form method="POST" action="{{ route('logout') }}">
+                @csrf
+                <button type="submit"
+                    class="font-bold border-2 border-red-400 rounded-xl px-4 py-2 text-red-400 hover:bg-red-400 hover:text-white">Logout</button>
+            </form>
         </div>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-   </body>
+    </header>
+    <main>
+        <section class="flex flex-col text-white items-center">
+            <div class="flex flex-col items-center space-y-9">
+                <div class="flex flex-col items-center space-y-4">
+                    <h1 class="text-5xl font-semibold">Strategi Dalam Market Crypto Untuk</h1>
+                    <h1 class="text-5xl font-semibold">Melipat Gandakan Aset Anda</h1>
+                    <h2 class="text-xl font-medium text-gray-400">Grand New Crypto Learning System</h2>
+                </div>
+                <object width="720" height="480" data="https://www.youtube.com/v/e0fbu5QvdWY"
+                    type="application/x-shockwave-flash">
+                    <param name="src" value="https://www.youtube.com/v/e0fbu5QvdWY" />
+                </object>
+            </div>
+        </section>
+        <section class="flex flex-col text-white items-center my-32">
+            <p class="text-lg mb-3">Kurikulum Program</p>
+            <h1 class="text-5xl font-semibold mb-20">Edukasi</h1>
+            <div class="flex flex-col items-center px-44 space-y-20">
+                @foreach ($course as $courses)
+                    <div class="flex space-x-32 items-start">
+                        <img class="w-[464px] rounded-2xl border-4 border-white"
+                            src="{{ asset('course/' . $courses->gambar_course) }}" alt="Gambar Course">
+                        <div class="space-y-9">
+                            <h1 class="text-4xl font-medium">{{ $courses->nama_course }}</h1>
+                            <p class="text-justify">{{ $courses->deskripsi_course }}</p>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+            <a class="bg-gradient-to-r from-[#7C6CFB] from-10% to-[#28B8FF] to-100% px-12 py-2 text-white font-bold rounded-lg mt-32"
+                href="/manage-education">Open LMS</a>
+        </section>
+        <section class="flex flex-col items-center my-64">
+            <div
+                class="flex flex-col italic bg-[#131320] border-2 border-[#28B8FF] rounded-xl items-center px-20 py-12">
+                <p class="font-semibold text-2xl">“If A Man Empties His Purse Into His</p>
+                <p class="font-semibold text-2xl">Head, No Man Can Take It Away”</p>
+                <p class="font-light text-xl mt-12">~ Benjamin Franklin ~</p>
+            </div>
+        </section>
+    </main>
+    <footer class="px-28 py-14 space-y-6 bg-[#14131F] border-t-2 border-[#28B8FF]">
+        <img src="{{ asset('logo.png') }}" alt="Logo">
+        <div class="flex justify-between items-center">
+            <div class="space-y-3">
+                <p class="text-white">tanya@cryon.com</p>
+                <p class="text-white">+62 810 5105 51 (WA Only)</p>
+            </div>
+            <div class="space-y-3">
+                <p class="text-white font-semibold">Crypto Education</p>
+                <p class="text-white">Copyright © 2024 All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
 </html>

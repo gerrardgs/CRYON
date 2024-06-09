@@ -1,0 +1,129 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+.tombol {
+    font-weight: 700;
+    border: none;
+    border-radius: 10px !important;
+    color: white !important;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    transition: background 0.3s ease;
+    letter-spacing: 0.5px;
+    font-size: 18px;
+}
+
+.btn-cryon {
+    background: linear-gradient(to right, #7c6cfb, #28b8ff);
+}
+
+.btn-cryon:hover {
+    background: linear-gradient(to right, #28b8ff, #7c6cfb);
+}
+
+.home-button {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.home-text {
+    font-weight: bold;
+    font-size: 20px;
+    background: linear-gradient(to right, #7c6cfb, #28b8ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    display: inline-block;
+}
+
+.home-text::before {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.navbar-toggler {
+    width: 100px;
+    height: 40px;
+    background: linear-gradient(to right, #7c6cfb, #28b8ff);
+}
+
+.navbar-toggler-icon {
+    width: 100%;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-right: 25px;
+    color: white;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 426px) {
+    .tombol {
+        font-weight: 700;
+        border: none;
+        border-radius: 10px !important;
+        color: white !important;
+        padding: 10px 20px;
+        cursor: pointer;
+        text-align: center;
+        display: inline-block;
+        transition: background 0.3s ease;
+        letter-spacing: 0.5px;
+        font-size: 16px;
+    }
+
+    .navbar-toggler {
+        width: 90px;
+        height: 35px;
+        background: linear-gradient(to right, #7c6cfb, #28b8ff);
+    }
+
+    .navbar-toggler-icon {
+        width: 100%;
+        font-weight: 700;
+        margin-top: 4px;
+        margin-right: 25px;
+        color: white;
+        letter-spacing: 0.5px;
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 376px) {
+    .tombol {
+        font-weight: 700;
+        border: none;
+        border-radius: 10px !important;
+        color: white !important;
+        padding: 10px 20px;
+        cursor: pointer;
+        text-align: center;
+        display: inline-block;
+        transition: background 0.3s ease;
+        letter-spacing: 0.5px;
+        font-size: 17px;
+    }
+
+    .navbar-toggler {
+        width: 90px;
+        height: 35px;
+        background: linear-gradient(to right, #7c6cfb, #28b8ff);
+    }
+
+    .navbar-toggler-icon {
+        width: 100%;
+        font-weight: 700;
+        margin-top: 4px;
+        margin-right: 25px;
+        color: white;
+        letter-spacing: 0.5px;
+        font-size: 17px;
+    }
+}

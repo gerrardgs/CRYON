@@ -1,0 +1,115 @@
+@extends('guest.app')
+
+@section('content')
+    <div class="container my-lg-5 my-md-3 my-sm-2">
+        <h1 class="text-dashboard text-center">Strategi Dalam Market Crypto Untuk Melipat Gandakan Aset Anda</h1>
+        <h5 class="text-dashboard text-sub-dashboard text-center">Grand New Crypto Learning System</h5>
+
+
+        <div id="carouselExampleSlidesOnly" class="carousel slide mb-2" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="video-dashboard carousel-item active text-center">
+                    <iframe class="text-center video-box" src="https://www.youtube.com/embed/e0fbu5QvdWY?autoplay=0"
+                        title="Investasi Crypto Dari Nol Untuk Pemula" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="garis-dashboard"></div>
+
+        <div class="background">
+            <div class="text-center mt-4 pt-4">
+                <h4 class="home-text ">Kurikulum Program</h4>
+            </div>
+            <h1 class="text-dashboard text-center mt-2">Edukasi</h1>
+            <div class="mt-4 pt-4">
+                <section class="sectionDashboard">
+                    <div class="container">
+                        <div class="row mb-xl-5 mb-lg-4 mb-md-3 mb-sm-4 pb-xl-5 pb-lg-4 pb-md-4 pb-sm-4">
+                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 text-center">
+                                <iframe class="section-dashboard" src="https://www.youtube.com/embed/16BMEGEsst4"
+                                    title="Cara Belajar Trading Dari Nol" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                                <div class="mx-xl-4 mx-lg-0 text-section">
+                                    <h2 class="mb-xl-4 mb-lg-3 mb-md-3 mb-sm-2 judul-section-home">Edukasi Crypto & Crypto
+                                        Learning
+                                    </h2>
+                                    <p>Di kurikulim ini, Kalian akan belajar serta dipandu mengenai apa saja Edukasi yang
+                                        harus
+                                        dikuasai
+                                        sebagai "the player of cryptomarket". Karena market adalah sebuah game, untuk
+                                        memenangkan
+                                        game,
+                                        pemain harus memiliki skillset, kemampuan, mental, dan ilmu yang mumpuni serta
+                                        berbagai
+                                        aspek-aspek lainnya agar dapat memiliki seluruh skillset yang mumpuni, untuk
+                                        bertarung
+                                        menjadi
+                                        pemenang dalam setiap tantangan dan kesempatan dalam market crypto yang sangat
+                                        ganas.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            </section>
+            <section class="sectionDashboard">
+                <div class="container">
+                    <div class="row mb-xl-5 mb-lg-4 mb-md-3 mb-sm-4 pb-xl-5 pb-lg-4 pb-md-4 pb-sm-4">
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 text-center">
+                            <iframe class="section-dashboard" src="https://www.youtube.com/embed/54cuS9Awros"
+                                title="Cara Mencari Altcoin Yang Berpotensi Naik 100x" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                            <div class="mx-xl-4 mx-lg-0 text-section">
+                                <h2 class="mb-4 judul-section-home">Crypto Research</h2>
+                                <p>Di kurikulim ini, Kalian akan belajar serta dipandu mengenai apa saja Edukasi yang harus
+                                    dikuasai
+                                    sebagai "the player of cryptomarket". Karena market adalah sebuah game, untuk
+                                    memenangkan
+                                    game,
+                                    pemain harus memiliki skillset, kemampuan, mental, dan ilmu yang mumpuni serta berbagai
+                                    aspek-aspek lainnya agar dapat memiliki seluruh skillset yang mumpuni, untuk bertarung
+                                    menjadi
+                                    pemenang dalam setiap tantangan dan kesempatan dalam market crypto yang sangat ganas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="overlay">
+            <div class="overlay-1">
+                <h1 class="overlay-text mb-4 pb-2">Login atau Register akun,
+                    untuk mendapat akses lms</h1>
+            </div>
+            <div class="text-center mb-md-5 mb-sm-2 pb-4 pb-sm-2 mt-md-4 mt-sm-2">
+                <button class="tombol btn-cryon my-2 my-sm-0">Continue</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="garis-dashboard"></div>
+
+    <div class="quotes-base">
+        <div class="container-quotes">
+            <div class="quotes-dashboard text-center">
+                <div class="text-quotes-dashboard">
+                    <h4 class="text-quotes-dashboard-bold mb-4 mt-4">“If A Man Empties His Purse Into His
+                        Head, No Man Can Take It Away”</h4>
+                    <p class="text-quotes-dashboard-small">~ Benjamin Franklin ~</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+@endsection

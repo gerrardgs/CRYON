@@ -4,13 +4,13 @@ use App\Http\Controllers\admin\LoginController as AdminLoginController;
 use App\Http\Controllers\admin\DashboardController as AdminDashboardController;
 
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\GuestController;
 use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
+Route::get('/', [GuestController::class, 'dashboard'])->name('guest.dashboard');
+Route::get('dashboard', [DashboardController::class, 'index'])->name('user.dashboard');
+Route::get('dashboard-admin', [AdminDashboardController::class, 'index'])->name('admins.dashboard');
 
 Route::group(['prefix' => 'account'], function () {
 
@@ -35,14 +35,12 @@ Route::group(['prefix' => 'admin'], function () {
     //Admin Middleware
     Route::group(['middleware => admin.guest'], function () {
     Route::get('login', [AdminLoginController::class, 'index'])->name('admin.login');
-    Route::post('authenticate', [AdminLoginController::class, 'authenticate'])->name('admin.authenticate');
-    
+    Route::post('authenticate', [AdminLoginController::class, 'authenticate'])->name('admin.authenticate');    
     });
-    
+
     //Admin Authenticator Middlewares
     Route::group(['middleware => admin.auth'], function () {
     Route::get('dashboard', [AdminDashboardController::class, 'index'])->name('admin.dashboard');
     Route::get('logout', [AdminLoginController::class, 'logout'])->name('admin.logout');
-    
     });
 });

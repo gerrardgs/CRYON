@@ -1,0 +1,32 @@
+.sidebar {
+    background-color: #12121E; 
+    color: white;
+}
+.container a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.container a:hover{
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    
+}
+
+.sidebar ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+#navbar {
+    background-color: #181727;
+    color: white;
+}
+
+.content-container {
+    background-color: #1D1B2D;
+    color: white;
+}
+

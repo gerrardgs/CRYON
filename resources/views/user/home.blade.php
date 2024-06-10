@@ -214,7 +214,7 @@
                         </div>
                         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                             <div class="mx-xl-4 mx-lg-0 text-section">
-                                <h2 class="mb-4 judul-section-home">Crypto Market</h2>
+                                <h2 class="mb-4 judul-section-home">Crypto News</h2>
                                 <p>Di Kurikulum ini, anda akan mendapatkan fasilitas berupa berita dan informasi terbaru 
                                     dan terkini, yang pastinya kredibel dan dapat dipertanggungjawabkan, karena informasi 
                                     dan berita yang cepat tersampaikan dan terdengar, akan sangat berpengaruh terhadap 
@@ -310,10 +310,11 @@
             </section>
         </div>
         <div class="text-center mb-md-5 mb-sm-2 pb-4 pb-sm-2 mt-md-4 mt-sm-2">
-            <button class="tombol btn-cryon my-2 my-sm-0">Open LMS</button>
+            <a class="tombol btn-cryon my-2 my-sm-0" href="/education">Open LMS</a>
         </div>
-        <div class="garis-dashboard"></div>
-    
+
+        <div class="garis-dashboard"></div> --
+
 
         {{-- Quotes --}}
         <section class="flex flex-col items-center my-64">

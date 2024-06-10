@@ -214,16 +214,12 @@
                         </div>
                         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                             <div class="mx-xl-4 mx-lg-0 text-section">
-                                <h2 class="mb-4 judul-section-home">Cryptocurrency Price Real-Time</h2>
-                                <p>Di kurikulim ini, Kalian akan belajar serta dipandu mengenai apa saja Edukasi yang harus
-                                    dikuasai
-                                    sebagai "the player of cryptomarket". Karena market adalah sebuah game, untuk
-                                    memenangkan
-                                    game,
-                                    pemain harus memiliki skillset, kemampuan, mental, dan ilmu yang mumpuni serta berbagai
-                                    aspek-aspek lainnya agar dapat memiliki seluruh skillset yang mumpuni, untuk bertarung
-                                    menjadi
-                                    pemenang dalam setiap tantangan dan kesempatan dalam market crypto yang sangat ganas.
+                                <h2 class="mb-4 judul-section-home">Crypto Market</h2>
+                                <p>Di Kurikulum ini, anda akan mendapatkan fasilitas berupa berita dan informasi terbaru 
+                                    dan terkini, yang pastinya kredibel dan dapat dipertanggungjawabkan, karena informasi 
+                                    dan berita yang cepat tersampaikan dan terdengar, akan sangat berpengaruh terhadap 
+                                    gameplan setiap individu didalam market crypto (karena di dalam market crypto, 
+                                    it’s all about speed)
                                 </p>
                             </div>
                         </div>
